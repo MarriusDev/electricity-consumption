@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Region?>
+
+<?import javafx.scene.layout.Region?>
+<VBox alignment="TOP_CENTER" spacing="10.0" style="-fx-background-color: #c2c2c2;" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.ElectricityConsumption.Controller">
+    <padding>
+        <Insets top="5.0"/>
+    </padding>
+
+    <Label text="Zadejte cenu za 1 MWh:" style="-fx-font-size: 16px; -fx-text-fill: #333333; -fx-underline: true;"/>
+    <TextField fx:id="pricePerMWhTextField" promptText="8225.47"
+               style="-fx-border-width: 2px; -fx-background-color: #f0f0f0; -fx-text-fill: #333333; -fx-font-size: 14px; -fx-background-radius: 15px;"
+               alignment="CENTER" maxWidth="100" maxHeight="20"/>
+
+    <Label text="Zadejte spotřebu zařízení (W/h):" style="-fx-font-size: 16px; -fx-text-fill: #333333; -fx-underline: true;"/>
+    <TextField fx:id="deviceConsumptionTextField" promptText="250"
+               style="-fx-border-width: 2px; -fx-background-color: #f0f0f0; -fx-text-fill: #333333; -fx-font-size: 14px; -fx-background-radius: 15px;"
+               alignment="CENTER" maxWidth="100" maxHeight="20"/>
+
+    <Region style="-fx-pref-height: 25px;"/>
+
+    <Button fx:id="calculateButton" text="SPOČÍTAT"
+            style="-fx-background-color: #ff675c; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; -fx-padding: 10px 20px; -fx-background-radius: 30px; -fx-border-radius: 30px;"/>
+
+    <Label fx:id="calculatedLabel" style="-fx-font-size: 16px; -fx-text-fill: #333333; -fx-font-weight: bold;"/>
+
+
+    <BorderPane>
+        <top>
+            <VBox/>
+        </top>
+    </BorderPane>
+</VBox>
